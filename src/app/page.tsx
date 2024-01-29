@@ -51,25 +51,26 @@ export default function Home() {
 					grid place-items-center">
 						Random Chuck-Joke Generator
 					</h1>
-					<div className="jokeContainer">
+					<div className="grid place-items-center ">
 						{error ? (
 							<p className="errorText">{error}</p>):(
 							<>
-								<p className="bg-yellow-300
+								<p className="bg-transparent border mt-5 mb-5 border-white rounded-lg
 								text-sky-400
 								pl-5 pr-5 pt-5 pb-5 rounded">{joke}</p>
 								<button className="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-white rounded
-								grid place-items-center"
+								mt-2"
 									onClick={handleCopyClick}>
 									{copySuccess ? 'Copied!' : 'Copy'}
 								</button>
+								<button className='bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-white rounded
+								grid place-items-center mt-2' onClick={getJoke}>
+						Get a Joke
+					</button>
 							</>
 						)}
 					</div>
-					<button className='bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-white rounded
-					grid place-items-center' onClick={getJoke}>
-						Get a Joke
-					</button>
+
 				</div>
 			</div>
 		</div>
