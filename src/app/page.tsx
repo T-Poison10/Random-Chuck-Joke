@@ -56,7 +56,7 @@ export default function Home() {
 							<p className="errorText">{error}</p>):(
 							<>
 								<p className="bg-transparent border mt-5 mb-5 border-white rounded-lg
-								text-sky-400
+								text-sky-400 text-center
 								pl-5 pr-5 pt-5 pb-5 rounded">{joke}</p>
 								<button className="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-white rounded
 								mt-2"
