@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import './globals.css';
+import Nav from './Navbar/page';
 
 
 export default function Home() {
@@ -38,6 +39,10 @@ export default function Home() {
 	};
 
 	return (
+		<div>
+
+		
+		<Nav></Nav>
 		<div className="grid place-items-center h-screen">
 			<Head>
 				<title >Random Chuck-Jokes Generator</title>
@@ -55,7 +60,7 @@ export default function Home() {
 							<>
 								<p className="bg-transparent border mt-5 mb-5 border-white rounded-lg
 								text-sky-400 text-center
-								pl-5 pr-5 pt-5 pb-5 rounded">{joke}</p>
+								pl-5 pr-5 pt-5 pb-5">{joke}</p>
 								<button className="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-white rounded
 								mt-2"
 									onClick={handleCopyClick}>
@@ -71,6 +76,7 @@ export default function Home() {
 
 				</div>
 			</div>
+		</div>
 		</div>
 	);
 }

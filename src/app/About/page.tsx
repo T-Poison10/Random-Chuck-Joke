@@ -1,3 +1,6 @@
+"use client"
+import '../globals.css';
+import Nav from '../Navbar/page';
 export default function Page()
 {
     return(
@@ -8,6 +11,7 @@ export default function Page()
                 </title>
             </head>
             <body>
+                    <Nav></Nav>
                     <div className="text-3xl font-bold grid place-items-center h-20">
                         <h1>About Chuck Jokes Generator</h1>
                     </div>
