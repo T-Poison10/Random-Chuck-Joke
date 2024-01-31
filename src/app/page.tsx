@@ -40,13 +40,11 @@ export default function Home() {
 	return (
 		<div className="grid place-items-center h-screen">
 			<Head>
-				<title >Random Jokes Generator</title>
-				<meta name="description"
-					content="Random Jokes Generator" />
+				<title >Random Chuck-Jokes Generator</title>
 			</Head>
 
-			<div className="content-center">
-				<div className="card">
+			<div>
+				<div>
 					<h1 className="text-3xl font-bold
 					grid place-items-center">
 						Random Chuck-Joke Generator
